@@ -135,9 +135,10 @@ if (payment.value == "select_method") {
   bitcoin.style.display = 'none';
 }
 
+creditCard.style.display = 'none';
 payment.addEventListener('change', () =>{
   if (payment.value == "select_method") {
-    creditCard.style.display = 'inherit';
+    creditCard.style.display = 'none';
     paypal.style.display = 'none';
     bitcoin.style.display = 'none';
   }
